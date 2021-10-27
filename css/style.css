@@ -48,28 +48,36 @@ body {
     font-weight: 800;
     font-size: 24px;
 }
+#menu{
+    position:absolute;
+    opacity: 0;
+}
 
-#menu:checked~.header__content{
-    opacity:1;
-transform: translate(-50%, -50%) translateY(0%) ;
+#menu:checked~.header__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0%);
 
 }
-.menu{
+
+.menu {
+    position: relative;
     font-size: 32px;
 }
-.header__content{
+
+.header__content {
     display: flex;
-    width: 1000px; 
-    height: 420px; 
-    background-color: rgba(255, 255, 255, 0.6) ;
+    width: 1000px;
+    height: 420px;
+    background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
     left: 50%;
     top: 65%;
-    transform: translate(-50%, -50%) translateY(-200%); 
+    transform: translate(-50%, -50%) translateY(-200%);
     opacity: 0;
-    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)     ;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
 }
